@@ -1,8 +1,13 @@
+import Navbar from "./navbar/page"
+import Hero from "./hero/page"
+import Bloghome from "./bloghome/page"
 export default function home(){
   return(
     <div>
-      {/* <@navbar/page.tsx/> */}
-      <h1>this is the hompage</h1>
+      <Navbar/>
+      <Hero/>
+      <Bloghome/>
+
     </div>
   )
 }
