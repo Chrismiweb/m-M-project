@@ -4,15 +4,17 @@ import { MdMenu } from "react-icons/md";
 import { IoClose } from "react-icons/io5";
 
 export default function navbar(){
-    // const[nav, setNav] = useState(false)
-    // function showNav(){
-    //     setNav(!nav)
+    // const [click, setClick] = useState<boolean>(false)
+    // function handleclick (){
+    //     setClick(!click)
     // }
     return(
         <nav className="w-[100%] justify-between items-center">
             <div className="w-[100%] py-4 flex px-4 items-center gap-[90px] md:gap-[500px] bg-white ">
                <Link href="/navbar2">
-                    <div className="flex justify-center items-center gap-1 cursor-pointer">
+                    <div 
+                    // onClick={handleclick}
+                        className="flex justify-center items-center gap-1 cursor-pointer">
                         <MdMenu className="text-blue-500 text-[30px]"/>
                         <p className="text-[20px] font-semibold text-blue-500 hidden md:flex">Menu</p>
                     </div>
@@ -34,6 +36,7 @@ export default function navbar(){
                 <Link href="*"><p className="hover:text-blue-500">Log In</p></Link>
                 <Link href="*"><p className="hover:text-blue-500">Sign Up</p></Link> */}
             </div>
+           
            
         </nav>
     )
