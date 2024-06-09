@@ -28,7 +28,7 @@ export default function CompanyPage() {
 
     const SelectedComponent = categoryComponents[selectedCategory] || AllCompany;
 
-    const getClassNames = (category) => {
+    const getClassNames = (category: string) => {
         return `cursor-pointer py-2 ${
             selectedCategory === category
                 ? "text-[#5c48b8] border-b-2 border-[#5c48b8] font-bold"
