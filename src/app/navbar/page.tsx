@@ -14,7 +14,7 @@ export default function Navbar() {
 
     return (
         <nav className="w-[100%]">
-            <div className="w-[100%] py-4 flex px-4 items-center justify-between bg-[#151515]">
+            <div className="w-[100%] py-4 flex px-4 items-center justify-between bg-[black]">
                 <div className="flex items-center gap-1 cursor-pointer" onClick={toggleMenu}>
                     {isMenuOpen ? (
                         <IoClose className="text-[#cce6ff] text-[30px]" />
@@ -36,18 +36,16 @@ export default function Navbar() {
                     <p className="text-[20px] font-semibold hidden md:flex">Menu</p>
                 </div>
             </div>
-            {isMenuOpen && (
-                <div className="w-[100%] ease-in-out h-[100vh] bg-white pt-[20px] pl-12 text-[20px] md:text-[30px] flex flex-col gap-[10px] font-medium">
-                    <Link href="*"><p className="hover:text-blue-500">Programs</p></Link>
-                    <Link href="*"><p className="hover:text-blue-500">E-apps</p></Link>
-                    <Link href="*"><p className="hover:text-blue-500">Community</p></Link>
-                    <Link href="*"><p className="hover:text-blue-500">Resources</p></Link>
-                    <Link href="*"><p className="hover:text-blue-500">Learn</p></Link>
-                    <Link href="*"><p className="hover:text-blue-500">Empower Education</p></Link>
-                    <Link href="*"><p className="hover:text-blue-500">News & Event</p></Link>
-                    <Link href="*"><p className="hover:text-blue-500">Get the Software</p></Link>
-                </div>
-            )}
+            <div className={`transition-all duration-1000 ease-in-out ${isMenuOpen ? 'opacity-100 h-[100vh]' : 'opacity-0 h-0'} overflow-hidden bg-black  pl-12 text-[20px] md:text-[30px] flex flex-col gap-[10px] font-medium`}>
+                <Link href="*"><p className="transition-all duration-500 hover:text-[#5c48b8] text-[#cce6ff]">Programs</p></Link>
+                <Link href="*"><p className="transition-all duration-500 hover:text-[#5c48b8] text-[#cce6ff]">E-apps</p></Link>
+                <Link href="*"><p className="transition-all duration-500 hover:text-[#5c48b8] text-[#cce6ff]">Community</p></Link>
+                <Link href="*"><p className="transition-all duration-500 hover:text-[#5c48b8] text-[#cce6ff]">Resources</p></Link>
+                <Link href="*"><p className="transition-all duration-500 hover:text-[#5c48b8] text-[#cce6ff]">Learn</p></Link>
+                <Link href="*"><p className="transition-all duration-500 hover:text-[#5c48b8] text-[#cce6ff]">Empower Education</p></Link>
+                <Link href="*"><p className="transition-all duration-500 hover:text-[#5c48b8] text-[#cce6ff]">News & Event</p></Link>
+                <Link href="*"><p className="transition-all duration-500 hover:text-[#5c48b8] text-[#cce6ff]">Get the Software</p></Link>
+            </div>
         </nav>
     );
 }

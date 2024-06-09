@@ -38,7 +38,7 @@ export default function CompanyPage() {
 
     return (
         <div className="w-[100%] bg-[#151515]">
-            <div className="w-[100%] flex justify-center items-center py-[20px] flex-col">
+            <div className="containerBg">
                 <h1 className="md:text-[55px] text-[35px] text-[#5c48b8] font-bold text-center mb-[50px] mt-[30px]">Our Companies</h1>
                 <div className="w-[100%] px-[20px] justify-center items-center">
                     {/* for mobile */}

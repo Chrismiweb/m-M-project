@@ -1,51 +1,51 @@
 import { FaGreaterThan } from "react-icons/fa6";
 import Link from "next/link";
+import Image from "next/image";
 export default function company(){
     const companylist= [
         {
-            logo:"Logo will be here ",
-            companyName: "Company Name"
+            logo: '/images/bird.png',
+            companyName: "Company Name 1"
         },
         {
-            logo:"Logo will be here",
-            companyName: "Company Name"
+            logo: '/images/bird.png',
+            companyName: "Company Name 2"
         },
         {
-            logo:"Logo will be here ",
-            companyName: "Company Name"
+            logo: '/images/bird.png',
+            companyName: "Company Name 3"
         },
         {
-            logo:"Logo will be here ",
-            companyName: "Company Name"
+            logo: '/images/bird.png',
+            companyName: "Company Name 4"
         },
         {
-            logo:"Logo will be here ",
-            companyName: "Company Name"
-        },
-        {
-            logo:"Logo will be here ",
-            companyName: "Company Name"
+            logo: '/images/bird.png',
+            companyName: "Company Name 5"
         },
     ]
     return(
-    <div className="w-[100%] bg-blue-100">
+    <div className="w-[100%] bg-[black]">
         <div className="w-[100%] flex justify-center items-center py-[50px]">
-            <h1 className="md:text-[35px] text-[30px] font-bold text-center">Discover what we’re all about</h1>
+            <h1 className="md:text-[35px] text-[#cce6ff] text-[30px] font-bold text-center">Discover what we’re all about</h1>
         </div>
-        <div className="overflow-x-auto flex gap-6 whitespace-nowrap p-4 border border-gray-300 rounded-lg">
+        <div className="overflow-x-auto flex gap-6 whitespace-nowrap p-4 rounded-lg">
                 {companylist.map((cm)=>(
-                    <div className="h-[400px] px-[80px] w-[1000px] gap-5 p-4 bg-white text-white flex-col text-center justify-center items-center flex transition-transform transform">
-                        <div className='text-[10px] font-bold text-white w-[140px] h-[140px] rounded-[100%] bg-blue-500 justify-center items-center flex'>
-                            {cm.logo}
+                    
+                    <div className="h-[400px] transition-all duration-500 px-[80px] w-[1000px] hover:bg-[black] gap-5 p-4 border border-slate-500 rounded-[10px] bg-[#202020] text-white flex-col text-center justify-center items-center flex ">
+                       <div className='text-[10px] font-bold w-[200px] h-[200px] justify-center items-center flex'>
+                            <Image src={cm.logo} width={200} height={200} alt="" />
                         </div>
-                        <p className="text-black mb-[70px] flex justify-center text-[20px] items-center gap-2 ">{cm.companyName} <FaGreaterThan className="text-blue-500" /></p>
+                        <p className="text-[#cce6ff] font-bold mb-[70px] flex justify-center text-[20px] mt-[30px] items-center gap-2 ">
+                            {cm.companyName} <FaGreaterThan className="text-[#5c48b8]" />
+                        </p>
                     </div>
                 ))}
                 
         </div>
         <div className="w-[100%] flex justify-center items-center py-[50px]">
             <Link href="/companyPage">
-                <button className="bg-blue-500 text-white hover:bg-blue-600 p-[16px] rounded-lg font-bold ">See All M & M Company</button>
+                <button className="bg-[#5c48b8] transition-all duration-500 text-white hover:bg-[#151533]  p-[16px] rounded-lg font-bold ">See All M & M Company</button>
             </Link>
         </div>
     </div>

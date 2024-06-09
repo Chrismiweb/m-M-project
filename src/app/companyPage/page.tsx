@@ -7,7 +7,7 @@ import AllCompany from "../allCompany/page";
 export default function companyPage(){
   
     return(
-        <div className="w-[100%]">
+        <div className="w-[100%] flex flex-col bg-[black]">
             <Navbar/>
             <SelectCompany/>
             {/* <AllCompany/> */}
