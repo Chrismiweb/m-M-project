@@ -32,7 +32,7 @@ export default function footer(){
                    
                 </div>
                 <div className="w-[90%] justify-center items-start flex text-center md:justify-start md:items-start">
-                    <p className="font-bold">"We serve as the central hub for marketing campaigns, community engagement, and sales activities."</p>
+                    <p className="font-bold">&quot;We serve as the central hub for marketing campaigns, community engagement, and sales activities.&quot;</p>
                 </div>
                 
             </div>
