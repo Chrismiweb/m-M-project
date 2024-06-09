@@ -32,8 +32,8 @@ export default function bloghome2(){
     return(
         <div className="w-[100%] py-[50px] flex flex-col gap-[20px] bg-blue-200">
             <div className='flex-col flex md:flex-row w-[100%] justify-center items-center gap-[20px]'>
-                {lineOne.map((lone)=>(
-                    <div className='w-[90%] md:w-[40%] bg-white flex flex-col gap-[20px]'>
+                {lineOne.map((lone, index)=>(
+                    <div key={index} className='w-[90%] md:w-[40%] bg-white flex flex-col gap-[20px]'>
                         <div className='w-[100%]'>
                             <Image 
                             src = {lone.image}
@@ -49,8 +49,8 @@ export default function bloghome2(){
                 
             </div>
             <div className='flex-col flex md:flex-row w-[100%] justify-center items-center gap-[20px]'>
-                {lineTwo.map((ltwo)=>(
-                        <div className='w-[90%] md:w-[40%]  bg-white flex flex-col gap-[20px]'>
+                {lineTwo.map((ltwo, index)=>(
+                        <div key={index} className='w-[90%] md:w-[40%]  bg-white flex flex-col gap-[20px]'>
                             <div className='w-[100%]'>
                                 <Image 
                                 src = {ltwo.image}

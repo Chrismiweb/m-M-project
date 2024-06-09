@@ -30,9 +30,9 @@ export default function company(){
             <h1 className="md:text-[35px] text-[#cce6ff] text-[30px] font-bold text-center">Discover what we’re all about</h1>
         </div>
         <div className="overflow-x-auto flex gap-6 whitespace-nowrap p-4 rounded-lg">
-                {companylist.map((cm)=>(
+                {companylist.map((cm,index)=>(
                     
-                    <div className="h-[400px] transition-all duration-500 px-[80px] w-[1000px] hover:bg-[black] gap-5 p-4 border border-slate-500 rounded-[10px] bg-[#202020] text-white flex-col text-center justify-center items-center flex ">
+                    <div key={index} className="h-[400px] transition-all duration-500 px-[80px] w-[1000px] hover:bg-[black] gap-5 p-4 border border-slate-500 rounded-[10px] bg-[#202020] text-white flex-col text-center justify-center items-center flex ">
                        <div className='text-[10px] font-bold w-[200px] h-[200px] justify-center items-center flex'>
                             <Image src={cm.logo} width={200} height={200} alt="" />
                         </div>
