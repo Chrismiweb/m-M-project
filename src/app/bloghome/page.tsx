@@ -41,7 +41,7 @@ export default function bloghome(){
 
     ]
     return(
-        <div className="bg-blue-100 gap-[50px] py-[50px] justify-center items-center flex flex-col ">
+        <div className="bg-white gap-[50px] py-[50px] justify-center items-center flex flex-col ">
             <h1 className='text-[30px] font-bold w-[80%] text-center md:text-[50px] '>Learn The Latest Details</h1>
             <div className='w-[100%] justify-center items-center flex flex-col gap-[40px] md:grid-cols-3 md:grid md:pl-[100px]'>
                 {blogs.map((b)=>(

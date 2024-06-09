@@ -2,7 +2,7 @@ import Hero from '../image/hero.png'
 import Image from 'next/image'
 export default function hero(){
     return(
-        <div className="w-[100%] bg-blue-500 py-[50px] justify-center items-center flex flex-col md:flex-row md:justify-around md:gap-8">
+        <div className="w-[100%]">
             <div className="w-[80%] items-center justify-center flex flex-col gap-[20px] md:w-[50%]">
               <p className="text-white font-semibold text-[23px]">M&M Corporate </p>
               <h1 className="text-center font-bold text-[30px] text-white md:text-[45px]">We Provide Company Info, Marketing, And Sales Hub.</h1>
