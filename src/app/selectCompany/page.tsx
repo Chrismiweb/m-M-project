@@ -18,7 +18,7 @@ const categoryComponents = {
 export default function CompanyPage() {
     const [selectedCategory, setSelectedCategory] = useState("");
 
-    const handleSelectChange = (e) => {
+    const handleSelectChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
         setSelectedCategory(e.target.value);
     };
 
