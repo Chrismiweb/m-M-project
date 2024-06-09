@@ -18,8 +18,8 @@ const categoryComponents = {
 export default function CompanyPage() {
     const [selectedCategory, setSelectedCategory] = useState("");
 
-    const handleSelectChange = (event) => {
-        setSelectedCategory(event.target.value);
+    const handleSelectChange = (e) => {
+        setSelectedCategory(e.target.value);
     };
 
     const handleDesktopCategoryChange = (category) => {
