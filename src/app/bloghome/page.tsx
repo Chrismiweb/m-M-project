@@ -1,5 +1,12 @@
 import man from '../image/man.png'
 import Image from 'next/image'
+import g1 from '../image/g1.jpg'
+import g2 from '../image/g2.png'
+import g3 from '../image/g3.png'
+import g4 from '../image/g4.png'
+import g5 from '../image/g5.png'
+
+
 import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
@@ -14,27 +21,27 @@ export default function bloghome(){
             titleDetails: "We offer corporate information, marketing services, and a sales hub."
         },
         {
-            image: man,
+            image: g1,
             title: "Business Idea",
             titleDetails: "We offer corporate information, marketing services, and a sales hub."
         },
         {
-            image: man,
+            image: g2,
             title: "Business Idea",
             titleDetails: "We offer corporate information, marketing services, and a sales hub."
         },
         {
-            image: man,
+            image: g3,
             title: "Business Idea",
             titleDetails: "We offer corporate information, marketing services, and a sales hub."
         },
         {
-            image: man,
+            image: g4,
             title: "Business Idea",
             titleDetails: "We offer corporate information, marketing services, and a sales hub."
         }, 
         {
-            image: man,
+            image: g5,
             title: "Business Idea",
             titleDetails: "We offer corporate information, marketing services, and a sales hub."
         },
