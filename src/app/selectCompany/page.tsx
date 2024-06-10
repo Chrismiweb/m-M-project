@@ -45,7 +45,7 @@ export default function CompanyPage() {
                     <select
                         value={selectedCategory}
                         onChange={handleSelectChange}
-                        className="w-[100%] md:hidde bg-[#cce6ff] rounded-[5px] border font-semibold border-black h-[40px] px-[20px]"
+                        className="w-[100%] md:hidden bg-[#cce6ff] rounded-[5px] border font-semibold border-black h-[40px] px-[20px]"
                     >
                         <option value="">All Company</option>
                         <option value="Entertainment">Entertainment</option>
