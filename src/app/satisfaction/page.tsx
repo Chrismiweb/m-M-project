@@ -16,11 +16,11 @@ export default function satisfaction(){
     const item2 =[
         {  "imaage":<GrDocumentPerformance /> ,
     "head": "100%",
-    "content": "Customer Satisfaction Rate",
+    "content": "Monthly Performance",
     },
     {  "imaage": <MdContacts /> ,
     "head": "100%",
-    "content": "Customer Satisfaction Rate",
+    "content": "Concersion Rate",
     },
     ]
     
