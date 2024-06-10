@@ -25,7 +25,7 @@ export default function company(){
         },
     ]
     return(
-    <div className="w-[100%] bg-[black]">
+    <div className="w-[100%] bg-[black] font-mono">
         <div className="w-[100%] flex justify-center items-center py-[50px]">
             <h1 className="md:text-[35px] text-[#cce6ff] text-[30px] font-bold text-center">Discover what we’re all about</h1>
         </div>
@@ -45,7 +45,7 @@ export default function company(){
         </div>
         <div className="w-[100%] flex justify-center items-center py-[50px]">
             <Link href="/companyPage">
-                <button className="bg-blue-500  transition-all duration-500 text-white hover:bg-blue-700  p-[16px] rounded-lg font-bold ">See All M & M Company</button>
+                <button className="bg-blue-500  transition-all duration-500 text-white hover:bg-blue-700  p-[16px] rounded-lg font-extrabold ">See All M & M Company</button>
             </Link>
         </div>
     </div>

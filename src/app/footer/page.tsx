@@ -6,7 +6,7 @@ import { FaLinkedin } from "react-icons/fa";
 
 export default function footer(){
     return(
-        <footer className="w-[100%] bg-[#001a33] md:items-start py-[70px] md:px-[50px] gap-[30px] justify-center items-center flex flex-col ">
+        <footer className="w-[100%] bg-[#001a33] font-mono md:items-start py-[70px] md:px-[50px] gap-[30px] justify-center items-center flex flex-col ">
             <div className="w-[80%] justify-center items-center md:justify-start md:items-start flex md:w-[100%]">
                 <h1 className="text-[#cce6ff] text-center text-[20px] font-bold">M & M LOGO</h1>
             </div>
@@ -37,11 +37,11 @@ export default function footer(){
                 
             </div>
             <div className='flex gap-4 text-[white] w-[100%] justify-center items-center md:text-[20px] '>
-                    <FaFacebookF/>
-                    <FaLinkedin/>
-                    <FaTwitter/>
-                    <FaYoutube/>
-                    <FaInstagramSquare/>
+                    <FaFacebookF className='cursor-pointer'/>
+                    <FaLinkedin className='cursor-pointer'/>
+                    <FaTwitter className='cursor-pointer'/>
+                    <FaYoutube className='cursor-pointer'/>
+                    <FaInstagramSquare className='cursor-pointer'/>
             </div>
         </footer>
     )

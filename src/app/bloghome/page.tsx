@@ -41,7 +41,7 @@ export default function bloghome(){
 
     ]
     return(
-        <div className="blog1cont">
+        <div className="blog1cont font-mono">
             <h1 className='text-[30px] font-bold w-[80%] text-[#cce6ff] text-center md:text-[50px] '>Learn The Latest Details</h1>
             <div className='w-[95%] justify-center items-center flex flex-col gap-[40px] md:grid-cols-3 md:grid md:pl-[20px]'>
                 {blogs.map((b, index)=>(
@@ -60,17 +60,17 @@ export default function bloghome(){
             </div>
             <button className='text-blue-500 font-bold border-slate-400 hover:border-blue-500 border py-[15px] text-[18px] rounded-md px-[20px]'>View More from M & M</button>
             <div className='w-[100%] justify-center items-center flex flex-col gap-[20px]'>
-                <div className='text-[20px] font-bold text-white w-[180px] h-[180px] rounded-[100%] bg-blue-500 justify-center items-center flex'>
+                <div className='text-[20px] text-center font-bold text-white w-[180px] h-[180px] rounded-[100%] bg-blue-500 justify-center items-center flex'>
                     Logo will be here
                 </div>
                 <h1 className='font-bold text-[22px] text-[#cce6ff] w-[70%] text-center'>Connect With Us On Social Media.</h1>
                 <p className='w-[80%] text-center text-[#cce6ff]'>Engage in discussions about our newest projects.</p>
-                <div className='flex gap-4 w-[100%] text-[white] justify-center items-center '>
-                    <FaFacebookF/>
-                    <FaLinkedin/>
-                    <FaTwitter/>
-                    <FaYoutube/>
-                    <FaInstagramSquare/>
+                <div className=' flex gap-4 w-[100%] text-[white] justify-center items-center '>
+                    <FaFacebookF className='cursor-pointer'/>
+                    <FaLinkedin className='cursor-pointer'/>
+                    <FaTwitter className='cursor-pointer'/>
+                    <FaYoutube className='cursor-pointer'/>
+                    <FaInstagramSquare className='cursor-pointer'/>
 
                 </div>
             </div>

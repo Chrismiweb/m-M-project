@@ -31,7 +31,7 @@ export default function CompanyPage() {
     const getClassNames = (category: keyof typeof categoryComponents) => {
         return `cursor-pointer py-2 ${
             selectedCategory === category
-                ? "text-[#5c48b8] border-b-2 border-[#5c48b8] font-bold"
+                ? "text-blue-500 border-b-2 border-blue-500 font-bold"
                 : "text-[#cce6ff] font-bold"
         }`;
     };
@@ -39,7 +39,7 @@ export default function CompanyPage() {
     return (
         <div className="w-[100%] bg-[#151515]">
             <div className="containerBg">
-                <h1 className="md:text-[55px] text-[35px] text-[#5c48b8] font-bold text-center mb-[50px] mt-[30px]">Our Companies</h1>
+                <h1 className="md:text-[55px] text-[35px] text-blue-500 font-extrabold text-center mb-[50px] mt-[30px]">Our Companies</h1>
                 <div className="w-[100%] px-[20px] justify-center items-center">
                     {/* for mobile */}
                     <select
