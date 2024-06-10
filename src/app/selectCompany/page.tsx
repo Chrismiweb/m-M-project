@@ -7,7 +7,7 @@ import BusinessCompany from "../businessCompany/page";
 import TechnologyCompany from "../technologyCompany/page";
 import MoneyCompany from "../moneyCompany/page";
 
-const categoryComponents = {
+const categoryComponents: { [key: string]: React.ComponentType } = {
     "": AllCompany,
     "Entertainment": EntertainmentCompany,
     "Business": BusinessCompany,
@@ -16,19 +16,19 @@ const categoryComponents = {
 };
 
 export default function CompanyPage() {
-    const [selectedCategory, setSelectedCategory] = useState<string>("");
+    const [selectedCategory, setSelectedCategory] = useState<keyof typeof categoryComponents>("");
 
     const handleSelectChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-        setSelectedCategory(e.target.value);
+        setSelectedCategory(e.target.value as keyof typeof categoryComponents);
     };
 
-    const handleDesktopCategoryChange = (category: string) => {
+    const handleDesktopCategoryChange = (category: keyof typeof categoryComponents) => {
         setSelectedCategory(category);
     };
 
     const SelectedComponent = categoryComponents[selectedCategory] || AllCompany;
 
-    const getClassNames = (category: string) => {
+    const getClassNames = (category: keyof typeof categoryComponents) => {
         return `cursor-pointer py-2 ${
             selectedCategory === category
                 ? "text-[#5c48b8] border-b-2 border-[#5c48b8] font-bold"
