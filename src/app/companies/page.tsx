@@ -45,7 +45,7 @@ export default function company(){
         </div>
         <div className="w-[100%] flex justify-center items-center py-[50px]">
             <Link href="/companyPage">
-                <button className="bg-[#5c48b8] transition-all duration-500 text-white hover:bg-[#151533]  p-[16px] rounded-lg font-bold ">See All M & M Company</button>
+                <button className="bg-blue-500  transition-all duration-500 text-white hover:bg-blue-700  p-[16px] rounded-lg font-bold ">See All M & M Company</button>
             </Link>
         </div>
     </div>

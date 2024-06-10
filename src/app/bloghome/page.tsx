@@ -43,9 +43,9 @@ export default function bloghome(){
     return(
         <div className="blog1cont">
             <h1 className='text-[30px] font-bold w-[80%] text-[#cce6ff] text-center md:text-[50px] '>Learn The Latest Details</h1>
-            <div className='w-[100%] justify-center items-center flex flex-col gap-[40px] md:grid-cols-3 md:grid md:pl-[100px]'>
+            <div className='w-[95%] justify-center items-center flex flex-col gap-[40px] md:grid-cols-3 md:grid md:pl-[20px]'>
                 {blogs.map((b, index)=>(
-                    <div key={index} className='w-[80%] bg-[black] pb-9 rounded-lg justify-center items-center flex flex-col gap-5  '>
+                    <div key={index} className='w-[100%] bg-[black] pb-9 rounded-lg justify-center items-center flex flex-col gap-5  '>
                         <div className=''>
                             <Image
                             src={b.image} 
