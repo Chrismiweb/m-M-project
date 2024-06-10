@@ -16,13 +16,13 @@ const categoryComponents = {
 };
 
 export default function CompanyPage() {
-    const [selectedCategory, setSelectedCategory] = useState("");
+    const [selectedCategory, setSelectedCategory] = useState<string>("");
 
     const handleSelectChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
         setSelectedCategory(e.target.value);
     };
 
-    const handleDesktopCategoryChange = (category) => {
+    const handleDesktopCategoryChange = (category: string) => {
         setSelectedCategory(category);
     };
 
