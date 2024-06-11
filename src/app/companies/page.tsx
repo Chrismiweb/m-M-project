@@ -31,7 +31,6 @@ export default function company(){
         </div>
         <div className="overflow-x-auto flex gap-6 whitespace-nowrap p-4 rounded-lg">
                 {companylist.map((cm,index)=>(
-                    
                     <div key={index} className="h-[400px] transition-all duration-500 px-[80px] w-[1000px] hover:bg-[black] gap-5 p-4 border border-slate-500 rounded-[10px] bg-[#202020] text-white flex-col text-center justify-center items-center flex ">
                        <div className='text-[10px] font-bold w-[200px] h-[200px] justify-center items-center flex'>
                             <Image src={cm.logo} width={200} height={200} alt="" />

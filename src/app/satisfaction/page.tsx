@@ -19,7 +19,7 @@ export default function satisfaction(){
     "content": "Monthly Performance",
     },
     {  "imaage": <MdContacts /> ,
-    "head": "100%",
+    "head": "453k",
     "content": "Concersion Rate",
     },
     ]
@@ -31,7 +31,7 @@ export default function satisfaction(){
                 <div key={index} className="w-[80%] md:w-[25%] gap-8 py-[30px] items-center flex pl-[20px] h-[50px] bg-[#001a33]">
                     <div className="text-blue-500 text-[30px]">{i.imaage}</div>
                     <div>
-                        <h1 className="font-bold">{i.head}</h1>
+                        <h1 className="font-bold text-white">{i.head}</h1>
                          <p className="text-slate-400">{i.content}</p>
                     </div>
                 </div>
@@ -45,7 +45,7 @@ export default function satisfaction(){
 
                     <div className="text-blue-500 text-[30px]">{j.imaage}</div>
                     <div>
-                        <h1 className="font-bold">{j.head}</h1>
+                        <h1 className="font-bold text-white">{j.head}</h1>
                          <p className="text-slate-400">{j.content}</p>
                     </div>
                 </div>
