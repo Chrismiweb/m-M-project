@@ -3,6 +3,8 @@ import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import hero from "../image/hero.png"
 
+
+
 export default function Hero() {
     const [text, setText] = useState("");
     const [currentWordIndex, setCurrentWordIndex] = useState(0);
@@ -34,7 +36,7 @@ export default function Hero() {
     return (
         <div className="w-[100%] flex flex-col md:flex md:flex-row md:justify-around items-center py-[80px] bg-[rgb(20,20,28)]">
             <div className="w-[80%] items-center justify-center flex flex-col gap-[20px] md:w-[50%]">
-                <p className="text-white font-semibold font-mono text-[23px]">M&M Corporate</p>
+                <p className="font-extrabold font-mono text-[23px] text-blue-500 ">M&M Corporate</p>
                 <h1 className="text-center h-[180px]  font-bold text-[30px] font-mono text-white md:text-[45px]">
                     <span>{text}</span>
                 </h1>

@@ -1,5 +1,8 @@
 import people from '../image/people.png'
 import Image from 'next/image'
+import s1 from "../image/s1.png"
+import s2 from "../image/s2.png"
+import s3 from "../image/s3.png"
 export default function bloghome2(){
     const lineOne = [
         {
@@ -9,7 +12,7 @@ export default function bloghome2(){
             learn : "Learn More"
         },
         {
-            image : people,
+            image : s1,
             header : "Our timeline.",
             content : "The M&M Corporate Website serves as the online face of our company, offering comprehensive information about our organization, programs, services, and products.",
             learn : "Learn More"
@@ -17,13 +20,13 @@ export default function bloghome2(){
     ]
     const lineTwo = [
         {
-            image : people,
+            image : s2,
             header : "Our timeline.",
             content : "The M&M Corporate Website serves as the online face of our company, offering comprehensive information about our organization, programs, services, and products.",
             learn : "Learn More"
         },
         {
-            image : people,
+            image : s3,
             header : "Our timeline.",
             content : "The M&M Corporate Website serves as the online face of our company, offering comprehensive information about our organization, programs, services, and products.",
             learn : "Learn More"
@@ -34,7 +37,7 @@ export default function bloghome2(){
             <div className='flex-col flex md:flex-row w-[100%] justify-center items-center gap-[20px]'>
                 {lineOne.map((lone, index)=>(
                     <div key={index} className='w-[90%] md:w-[40%] bg-[#001a33] flex flex-col gap-[20px]'>
-                        <div className='w-[100%]'>
+                        <div className='w-[100%] h-[300px] overflow-hidden'>
                             <Image 
                             src = {lone.image}
                             alt =''/>
@@ -51,7 +54,7 @@ export default function bloghome2(){
             <div className='flex-col flex md:flex-row w-[100%] justify-center items-center gap-[20px]'>
                 {lineTwo.map((ltwo, index)=>(
                         <div key={index} className='w-[90%] md:w-[40%] bg-[#001a33] flex flex-col gap-[20px]'>
-                        <div className='w-[100%]'>
+                        <div className='w-[100%] h-[300px] overflow-hidden'>
                             <Image 
                             src = {ltwo.image}
                             alt =''/>

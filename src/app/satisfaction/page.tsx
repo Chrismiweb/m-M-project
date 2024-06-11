@@ -38,11 +38,8 @@ export default function satisfaction(){
          ))}
         </div>
         <div className="w-[100%] md:flex-row flex-col justify-center items-center gap-5 flex">
-
-
          {item2.map((j, index)=>(
                                 <div key={index} className="w-[80%] md:w-[25%] gap-8 py-[30px] items-center flex pl-[20px] h-[50px] bg-[#001a33]">
-
                     <div className="text-blue-500 text-[30px]">{j.imaage}</div>
                     <div>
                         <h1 className="font-bold text-white">{j.head}</h1>
@@ -51,7 +48,6 @@ export default function satisfaction(){
                 </div>
          ))}
         </div>
-
          </div>
     )
 }

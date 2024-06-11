@@ -42,14 +42,14 @@ export default function Navbar() {
             <div className={`transition-all font-mono duration-1000 ease-in-out ${isMenuOpen ? 'opacity-100 h-[100vh]' : 'opacity-0 h-0'} overflow-hidden bg-black pl-12 text-[20px] md:text-[30px] flex flex-col gap-[10px] font-medium`}>
                 {isMenuOpen && (
                     <>
-                        <Link href="*"><p className="transition-all duration-500 mt-[40px] hover:text-[#5c48b8] text-[#cce6ff]">Programs</p></Link>
-                        <Link href="*"><p className="transition-all duration-500 hover:text-[#5c48b8] text-[#cce6ff]">E-apps</p></Link>
-                        <Link href="*"><p className="transition-all duration-500 hover:text-[#5c48b8] text-[#cce6ff]">Community</p></Link>
-                        <Link href="*"><p className="transition-all duration-500 hover:text-[#5c48b8] text-[#cce6ff]">Resources</p></Link>
-                        <Link href="*"><p className="transition-all duration-500 hover:text-[#5c48b8] text-[#cce6ff]">Learn</p></Link>
-                        <Link href="*"><p className="transition-all duration-500 hover:text-[#5c48b8] text-[#cce6ff]">Empower Education</p></Link>
-                        <Link href="*"><p className="transition-all duration-500 hover:text-[#5c48b8] text-[#cce6ff]">News & Event</p></Link>
-                        <Link href="*"><p className="transition-all duration-500 hover:text-[#5c48b8] text-[#cce6ff]">Get the Software</p></Link>
+                        <Link href="*"><p className="transition-all duration-500 mt-[40px] hover:text-blue-500 text-[#cce6ff]">Programs</p></Link>
+                        <Link href="*"><p className="transition-all duration-500 hover:text-blue-500 text-[#cce6ff]">E-apps</p></Link>
+                        <Link href="*"><p className="transition-all duration-500 hover:text-blue-500 text-[#cce6ff]">Community</p></Link>
+                        <Link href="*"><p className="transition-all duration-500 hover:text-blue-500 text-[#cce6ff]">Resources</p></Link>
+                        <Link href="*"><p className="transition-all duration-500 hover:text-blue-500 text-[#cce6ff]">Learn</p></Link>
+                        <Link href="*"><p className="transition-all duration-500 hover:text-blue-500 text-[#cce6ff]">Empower Education</p></Link>
+                        <Link href="*"><p className="transition-all duration-500 hover:text-blue-500 text-[#cce6ff]">News & Event</p></Link>
+                        <Link href="*"><p className="transition-all duration-500 hover:text-blue-500 text-[#cce6ff]">Get the Software</p></Link>
                     </>
                 )}
             </div>
