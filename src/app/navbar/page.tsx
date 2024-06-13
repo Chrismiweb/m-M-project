@@ -26,8 +26,8 @@ export default function Navbar() {
                     </p>
                 </div>
                 <Link href="/">
-                    <h1 className="text-[#cce6ff] text-center cursor-pointer text-[20px] font-bold mx-auto">
-                        M & M LOGO
+                    <h1 className="text-blue-500 text-center cursor-pointer text-[20px] font-bold mx-auto">
+                    JONEZY LOGO
                     </h1>
                 </Link>
                 {/* Add an invisible placeholder to balance the flex container */}

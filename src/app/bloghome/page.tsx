@@ -65,7 +65,7 @@ export default function bloghome(){
                     </div>
                 ))}
             </div>
-            <button className='text-blue-500 font-bold border-slate-400 hover:border-blue-500 border py-[15px] text-[18px] rounded-md px-[20px]'>View More from M & M</button>
+            <button className='text-blue-500 font-bold border-slate-400 hover:border-blue-500 border py-[15px] text-[18px] rounded-md px-[20px]'>View More from JONEZY</button>
             <div className='w-[100%] justify-center items-center flex flex-col gap-[20px]'>
                 <div className='text-[20px] text-center font-bold text-white w-[180px] h-[180px] rounded-[100%] bg-blue-500 justify-center items-center flex'>
                     Logo will be here

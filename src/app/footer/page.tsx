@@ -8,7 +8,7 @@ export default function footer(){
     return(
         <footer className="w-[100%] bg-[#001a33] font-mono md:items-start py-[70px] md:px-[50px] gap-[30px] justify-center items-center flex flex-col ">
             <div className="w-[80%] justify-center items-center md:justify-start md:items-start flex md:w-[100%]">
-                <h1 className="text-[#cce6ff] text-center text-[20px] font-bold">M & M LOGO</h1>
+                <h1 className="text-[#cce6ff] text-center text-[20px] font-bold">JONEZY LOGO</h1>
             </div>
             <div className="w-[100%] gap-[30px] md:flex-row justify-center flex flex-col items-center">
                 <div className=" font-semibold md:flex-row md:justify-start md:items-start text-[16px] justify-center gap-3 items-center flex flex-col text-center w-[100%]">
