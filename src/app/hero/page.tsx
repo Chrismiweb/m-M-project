@@ -34,10 +34,10 @@ export default function Hero() {
     }, [text, currentWordIndex]);
 
     return (
-        <div className="w-[100%] flex flex-col md:flex md:flex-row md:justify-around items-center py-[80px] bg-[rgb(20,20,28)]">
+        <div className="herosect w-[100%] flex flex-col md:flex md:flex-row md:justify-around items-center py-[80px] bg-[rgb(20,20,28)]">
             <div className="w-[80%] items-center justify-center flex flex-col gap-[20px] md:w-[50%]">
                 <p className="font-extrabold font-mono text-[23px] text-blue-500 ">JONEZY Corporate</p>
-                <h1 className="text-center h-[200px] font-bold text-[30px] font-mono text-white md:text-[45px]">
+                <h1 className="text-center md:h-[300px] h-[200px] font-bold text-[30px] font-mono text-white md:text-[45px]">
                     <span>{text}</span>
                 </h1>
                 <button className='text-white mt-[40px] bg-blue-500 font-mono font-semibold transition-all duration-500 hover:bg-blue-700 rounded-[5px] py-[13px] px-[20px]'>Discover More</button>
