@@ -5,7 +5,7 @@ import hero from "../image/hero.png"
 
 
 
-export default function herotest() {
+export default function Herotest() {
     const [text, setText] = useState("");
     const [currentWordIndex, setCurrentWordIndex] = useState(0);
     const words = [
