@@ -1,22 +1,45 @@
+"use client";
 import Navbar from "../navbar/page"
 import NavPage from "../navPages/page";
-
-// import NavPage from "./navPages/page";
-import aboutus from '../image/aboutus.png'
-import Image from "next/image"
-import './page.css'
+import AboutUsHeader from "../aboutusHeader/page"
+import WhoWeAre from "../WhoWeAre/page";
+import OurMission from "../ourMission/page";
+import Esco from "../escos/page";
+import OurMission2 from "../ourMission2/page"
+import Achievement from "../achievement/page";
+import Footer from "../footer/page";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS styles
+import { useEffect } from "react";
 
 export default function aboutUsPage(){
+    useEffect(() => {
+        AOS.init({
+          duration: 1200,
+          once: true,
+        });
+      }, []);
     return(
-        <div className="w-[100%]">
+        <div className="w-[100%] bg-black">
             <Navbar/>
             <NavPage/>
-            
-            <div className="aboutus-header gap-4">
-                <h1 className="md:text-[70px] text-[35px] text-center text-[white] mt-[40px] font-semibold">Discover Insight</h1>
-                <p className="md:w-[70%] w-[90%] text-center text-white text-[18px]">Who we are and what we do extends far beyond offering technology solutions. Discover how we’re impacting the world around us and making a significant difference.</p>
-                <button className="bg-blue-500 transition-all ease-in-out duration-500 text-white font-semibold hover:bg-blue-600  py-[15px] px-[30px]">Contact Us</button>
+            <AboutUsHeader/>
+            <div data-aos="fade-up">
+            <WhoWeAre/>
             </div>
+            <OurMission/>
+            <div data-aos="fade-up">
+
+            <Esco/>
+            </div>
+            <div data-aos="fade-up">
+
+            <OurMission2/>
+
+            <Achievement/>
+            </div>
+            <Footer/>
+            
         </div>
 
     )

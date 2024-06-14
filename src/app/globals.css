@@ -4,15 +4,7 @@
 
 /* ------------- */
 
-.containerBg{
-  background-image: url(../app/image/techbg.jpg);
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 0ps;
-  flex-direction: column;
-}
+
 .blog2{
   width: 100%;
   padding: 50px 0px;
