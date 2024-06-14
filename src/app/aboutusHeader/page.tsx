@@ -10,8 +10,11 @@ export default function aboutUsHeader(){
     return(
         <div className="w-[100%]">
             <div className="relative w-full h-[400px] overflow-hidden">
-                <Image src={aboutus} alt="" className="absolute top-1/2 left-1/2 w-full h-full object-cover transform -translate-x-1/2 -translate-y-1/2"/>
-        
+                {/* <Image src={aboutus} alt="" className="absolute top-1/2 left-1/2 w-full h-full object-cover transform -translate-x-1/2 -translate-y-1/2"/> */}
+                <video autoPlay loop muted playsInline className="absolute top-1/2 left-1/2 w-full h-full object-cover transform -translate-x-1/2 -translate-y-1/2">
+        <source src="/ab.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
                 <div className="absolute inset-0 bg-black opacity-70 z-0"></div>
         <div className="relative z-10 gap-4 flex flex-col items-center justify-center h-full text-white">
               <h1 className="md:text-[70px] text-[35px] text-center text-[#cce6ff] mt-[40px] font-semibold"> Discover Insight</h1>

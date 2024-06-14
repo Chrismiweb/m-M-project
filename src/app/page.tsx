@@ -7,6 +7,8 @@ import Footer from "./footer/page";
 import Bloghome2 from "./bloghome2/page";
 import Company from "./companies/page";
 import NavPage from "./navPages/page";
+import Bgtest from "./bgtest/page";
+import Herotest from "./herotest/page";
 import Satisfaction from "./satisfaction/page";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
@@ -24,14 +26,14 @@ export default function Home() {
     <div className="bg-black">
       <Navbar />
       <NavPage />
-      <Hero />
-
+      {/* <Hero /> */}
+      <Herotest/>
       <div data-aos="fade-up">
         <Company />
       </div>
       <div data-aos="fade-down">
-
-      <Bloghome />
+        <Bgtest/>
+      {/* <Bloghome /> */}
       </div>
       <div data-aos="fade-up">
         <Satisfaction/>

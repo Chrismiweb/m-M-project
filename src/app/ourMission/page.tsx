@@ -10,6 +10,7 @@ export default function ourMission(){
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-white">
         <h1 className="text-[40px] font-bold font-mono text-[#cce6ff]">OUR MISSION</h1>
         <p className="mt-2 text-center w-[90%] md:w-[70%] font-serif">The JONEZY Corporate Website offers information on our organization, programs, and services. Featuring LMS, On-Demand App, E-commerce Marketplace, and Online Courses, we aim to engage and empower visitors to join our mission for positive change.</p>
+      
       </div>
     </div>
     )
