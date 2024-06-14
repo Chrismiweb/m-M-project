@@ -20,8 +20,8 @@ export default function esco(){
     return(
         <div className="w-[100%] bg-[rgb(0,26,51)] justify-center py-[50px] px-[20px] md:px-[70px] gap-[30px]  flex flex-col">
             <div className="w-[100%] flex-col md:flex-row flex gap-[50px] justify-center items-center ">
-                {escodetails.map((e)=>(
-                    <div className="md:w-[25%] w-[100%] flex flex-col justify-center items-center">
+                {escodetails.map((e,index)=>(
+                    <div key={index} className="md:w-[25%] w-[100%] flex flex-col justify-center items-center">
                         <div className="w-[250px] h-[250px] flex justify-center items-center rounded-[100%] bg-black">
                             <Image src={e.image} alt="CEO Image" className="w-[250px] h-[250px] rounded-[100%]"/>
                         </div>
@@ -31,8 +31,8 @@ export default function esco(){
                 ))}
             </div>
             <div className="w-[100%] flex-col md:flex-row flex gap-[50px] justify-center items-center">
-                {escodetails.map((e)=>(
-                    <div className="md:w-[25%] w-[100%] flex flex-col justify-center items-center">
+                {escodetails.map((e, index)=>(
+                    <div key={index} className="md:w-[25%] w-[100%] flex flex-col justify-center items-center">
                         <div className="w-[250px] h-[250px] flex justify-center items-center rounded-[100%] bg-black">
                             <Image src={e.image} alt="CEO Image" className="w-[250px] h-[250px] rounded-[100%]"/>
                         </div>
