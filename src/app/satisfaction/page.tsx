@@ -2,6 +2,7 @@ import { AiFillSmile } from "react-icons/ai";
 import { FaThumbsUp } from "react-icons/fa6";
 import { GrDocumentPerformance } from "react-icons/gr";
 import { MdContacts } from "react-icons/md";
+// satisfaction page code 
 export default function satisfaction(){
     const item = [
       {  "imaage" : <AiFillSmile />,
