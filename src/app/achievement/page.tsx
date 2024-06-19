@@ -11,6 +11,7 @@ export default function achievement(){
             <div className="w-[100%] bg-gradient-to-r from-blue-600 to-[#001a33] flex justify-center items-center py-[20px]">
                 <h1 className="text-[20px] font-mono text-white px-[10px] text-center">We Provide Company Info, Marketing, And Sales Hub.</h1>
             </div>
+            {/* <button className="border-4 border-red-500 px-[10px] py-[10px]">View All</button> */}
         </div>
     )
 }
